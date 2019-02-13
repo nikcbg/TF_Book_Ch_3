@@ -34,7 +34,7 @@ export AWS_SECRET_ACCESS_KEY="your secret access key here"
 - go into the ubfolder which is this example `cd 1. shared_storage_for_state_files`.
 
 ------------------------------------------------------------------------------------------------------------------
-### Commands needed to build the webserver on the EC2 instance.
+### Commands needed to create the S3 bucket and move the terraform state file to S3 bucket.
 - execute `terraform init` - to initialize the provider and download the neccesery plugins.
   
 - execute `terraform plan` - to create execution plan for changes to be applied, the output should diplay the following:  
@@ -68,6 +68,7 @@ Outputs:
 
 s3_bucket_arn = arn:aws:s3:::tf-state-file-bucket
 ```
+---------------------------------------------------------------------------------------------------------------------------
 - up to this point the `terraform.tfstate` file is still stored on your local computer.
 - to store the file in the S3 bucket we just created you need to add the below code to your `main.tf` file:
 
