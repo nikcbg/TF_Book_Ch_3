@@ -29,7 +29,7 @@ export AWS_ACCESS_KEY_ID="your access key id here"
 export AWS_SECRET_ACCESS_KEY="your secret access key here"
 ```
    
-- clone the repository to your local computer: `git clone https://github.com/nikcbg/TF_Book_Ch_3.
+- clone the repository to your local computer: `git clone https://github.com/nikcbg/TF_Book_Ch_3`.
 - go into the cloned repo on your computer: `cd TF_Book_Ch_3`.
 - go into the ubfolder which is this example `cd 1. shared_storage_for_state_files`.
 
