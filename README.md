@@ -3,6 +3,7 @@
 ### The purpose of the repository is to explain what is terraform state, common issues with terraform state and examples of `terraform` configuration code.
 
 ### What is terraform state:
+
 ```
 Terraform state is a file that maps resources from Terraform configuration file to real world resources. The state is stored in local file named `terraform.tfstae`. Terraform state is required for Terraform to function. Check the links below for some common issues with Terraform state.
 
