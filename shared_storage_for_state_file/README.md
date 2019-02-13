@@ -1,1 +1,0 @@
-# shared_storage_for_state_file
