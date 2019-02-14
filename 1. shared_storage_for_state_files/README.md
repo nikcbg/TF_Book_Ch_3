@@ -116,4 +116,3 @@ s3_bucket_arn = arn:aws:s3:::tf-state-file-bucket
 ```
 
 - next delete all versions in the bucket and execute `terraform destroy`. 
-- in this case, I will not destroy the S3 bucket because I will use it for the next examples.
