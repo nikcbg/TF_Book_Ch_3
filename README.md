@@ -8,7 +8,7 @@
 Terraform state is a file that maps resources from Terraform configuration file to real world resources. 
 The state is stored in local file named `terraform.tfstae`. 
 Terraform state is required for Terraform to function. 
-Check the links below for some common issues with Terraform state.
+Check the links below for some common issues with Terraform state and more detailed explanation.
 ```
 
 #### Check the links below for more deatailed explanation on common issues with terraform state and some code examples:
