@@ -54,9 +54,9 @@ export AWS_SECRET_ACCESS_KEY="your secret access key here"
 ------------------------------------------------------------------------------------------------------------------
 ### Commands needed to create the S3 bucket and move the terraform state file to S3 bucket using Terragrunt.
 
-  #### Installing and configuring Terragrunt:
-    - go to Terragrunt repo in GitHub and follow the [instructions](https://github.com/gruntwork-io/terragrunt#install-terragrunt) how to isntall it.
-    - create `.terraform.tfvars` file in `2. locking_state_file` directory and put the below code:
+#### Installing and configuring Terragrunt:
+ - go to Terragrunt repo in GitHub and follow the [instructions](https://github.com/gruntwork-io/terragrunt#install-terragrunt) how to isntall it.
+ - create `.terraform.tfvars` file in `2. locking_state_file` directory and put the below code:
 ```
     # Configure Terragrunt to use DynamoDB for locking
 lock = {
