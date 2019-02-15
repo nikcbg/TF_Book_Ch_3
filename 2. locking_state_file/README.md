@@ -115,7 +115,7 @@ s3_bucket_arn = arn:aws:s3:::tf-state-file-bucket
 
 ```
 
-- execute `terraform destroy` - to destroy the resource that we just created, the output should diplay the following:
+- execute `terragrunt destroy` - to destroy the resource that we just created, the output should diplay the following:
 ```
 aws_s3_bucket.terraform_state: Refreshing state... (ID: tf-state-file-bucket)
 aws_s3_bucket.terraform_state: Destroying... (ID: tf-state-file-bucket)
