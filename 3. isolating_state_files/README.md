@@ -26,7 +26,7 @@ export AWS_SECRET_ACCESS_KEY="your secret access key here"
 - go into the subfolder which is this example `cd 3. isolating_state_files/`.
 
 ------------------------------------------------------------------------------------------------------------------
-### Commands needed to test the TErraform code and create separate state file in each folder.
+### Commands needed to test the Terraform code and create separate state file in each folder.
 
 - execute `terraform init` - to initialize the provider and download the neccesery plugins.
   
