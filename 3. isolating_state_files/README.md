@@ -10,9 +10,9 @@ It is a good practice to have a separate Terraform state file for each environme
 ----------------------------------------------------------------------------------------------------------------------
 
 
-1.[3.isolating_state_files/global/s3/](https://github.com/nikcbg/TF_Book_Ch_3/tree/master/3.%20isolating_state_files/global/s3) - Terraform configuration code that creates S3 bucket in AWS that stores terraform state file. 
+[global/s3/](https://github.com/nikcbg/TF_Book_Ch_3/tree/master/3.%20isolating_state_files/global/s3) - Terraform configuration code that creates S3 bucket in AWS that stores terraform state file. 
 
-2.[3.isolating_state_files/stage/data-stores/mysql](https://github.com/nikcbg/TF_Book_Ch_3/tree/master/3.%20isolating_state_files/stage/data-stores/mysql) - Terraform configuration code that creates MySQL database which talks to webservers cluster.
+[stage/data-stores/mysql](https://github.com/nikcbg/TF_Book_Ch_3/tree/master/3.%20isolating_state_files/stage/data-stores/mysql) - Terraform configuration code that creates MySQL database which talks to webservers cluster.
 
-3.[3.isolating_state_files/stage/services/webserver_cluster](https://github.com/nikcbg/TF_Book_Ch_3/tree/master/3.%20isolating_state_files/stage/services/webserver_cluster) - Terraform configuration code that creates webservers cluster and load balancer in AWS.
+[stage/services/webserver_cluster](https://github.com/nikcbg/TF_Book_Ch_3/tree/master/3.%20isolating_state_files/stage/services/webserver_cluster) - Terraform configuration code that creates webservers cluster and load balancer in AWS.
 
