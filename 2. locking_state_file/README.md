@@ -74,8 +74,8 @@ remote_state = {
 
   config {
     encrypt = true
-    bucket = "tf-state-file-bucket"
-    key = "global/s3/terraform.tfstate"
+    bucket = "your-bucket-name"
+    key = "your-bucket-key"
     region = "us-east-1"
    }
  }
@@ -98,7 +98,7 @@ Plan: 1 to add, 0 to change, 0 to destroy.
 - execute `terragrunt apply` - to apply the desired changes, the output should diplay the following:
 
 ```
-aws_s3_bucket.terraform_state: Creation complete (ID: tf-state-file-bucket)
+aws_s3_bucket.terraform_state: Creation complete (ID: your-bucket-name)
 
 Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 
@@ -111,14 +111,14 @@ State path:
 
 Outputs:
 
-s3_bucket_arn = arn:aws:s3:::tf-state-file-bucket
+s3_bucket_arn = arn:aws:s3:::your-bucket-name
 
 ```
 
 - execute `terragrunt destroy` - to destroy the resource that we just created, the output should diplay the following:
 ```
-aws_s3_bucket.terraform_state: Refreshing state... (ID: tf-state-file-bucket)
-aws_s3_bucket.terraform_state: Destroying... (ID: tf-state-file-bucket)
+aws_s3_bucket.terraform_state: Refreshing state... (ID: your-bucket-name)
+aws_s3_bucket.terraform_state: Destroying... (ID: your-bucket-name)
 aws_s3_bucket.terraform_state: Destruction complete
 
 Destroy complete! Resources: 1 destroyed.
