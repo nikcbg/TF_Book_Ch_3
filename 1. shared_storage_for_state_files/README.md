@@ -43,7 +43,7 @@ Terraform will perform the following actions:
 
   + aws_s3_bucket.terraform_state
       id:                          <computed>
-      bucket:                      "tf-state-file-bucket"
+      bucket:                      "your-bucket-name"
       versioning.#:                "1"
       versioning.0.enabled:        "true"
       versioning.0.mfa_delete:     "false"
@@ -55,12 +55,12 @@ Plan: 1 to add, 0 to change, 0 to destroy.
 
 ```
 aws_s3_bucket.terraform_state: Creating...
-  bucket:                      "" => "tf-state-file-bucket"
+  bucket:                      "" => "your-bucket-name"
   versioning.#:                "" => "1"
   versioning.0.enabled:        "" => "true"
   versioning.0.mfa_delete:     "" => "false"
 aws_s3_bucket.terraform_state: Still creating... (10s elapsed)
-aws_s3_bucket.terraform_state: Creation complete after 12s (ID: tf-state-file-bucket)
+aws_s3_bucket.terraform_state: Creation complete after 12s (ID: your-bucket-name)
 
 Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 
@@ -75,9 +75,9 @@ s3_bucket_arn = arn:aws:s3:::tf-state-file-bucket
 ```
 terraform {
   backend "s3" {
-    bucket  = "tf-state-file-bucket"
+    bucket  = "your-bucket-name"
     region  = "us-east-1"
-    key     = "terraform.tfstate"
+    key     = "your-bucket-key"
     encrypt = true
   }
 }
@@ -95,13 +95,13 @@ backend? Enter "yes" to copy and "no" to start with an empty state.
 ```
 - execute `terraform apply` again to refresh the state, the output should diplay the following:  
 ```
-aws_s3_bucket.terraform_state: Refreshing state... (ID: tf-state-file-bucket)
+aws_s3_bucket.terraform_state: Refreshing state... (ID: your-bucket-name)
 
 Apply complete! Resources: 0 added, 0 changed, 0 destroyed.
 
 Outputs:
 
-s3_bucket_arn = arn:aws:s3:::tf-state-file-bucket
+s3_bucket_arn = arn:aws:s3:::your-bucket-name
 ```
 - you can go to your S3 bucket in your AWS account:
   - click on your bucket name where you will see `terraform.tfstate` file.
