@@ -66,7 +66,7 @@ Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 
 Outputs:
 
-s3_bucket_arn = arn:aws:s3:::tf-state-file-bucket
+s3_bucket_arn = arn:aws:s3:::your-bucket-name
 ```
 ---------------------------------------------------------------------------------------------------------------------------
 - up to this point the `terraform.tfstate` file is still stored on your local computer.
