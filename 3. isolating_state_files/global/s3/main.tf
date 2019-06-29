@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "terraform_state" {
-  bucket = "${var.bucket_name}"
+  bucket = var.bucket_name
 
   versioning {
     enabled = true
@@ -13,3 +13,4 @@ resource "aws_s3_bucket" "terraform_state" {
     prevent_destroy = true
   }
 }
+
